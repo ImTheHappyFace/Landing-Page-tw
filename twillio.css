@@ -299,8 +299,9 @@ h1 { font-size: 1.5em; margin: 10px; }
     .main-row-top{
         height: 128px !important;
     }
-
-
+       h1{
+      font-size: 2.5rem !important;
+    }
 
     .main-row-rich-text{
         padding: 0rem 1rem !important;
@@ -319,13 +320,8 @@ h1 { font-size: 1.5em; margin: 10px; }
       width: 177px;
       padding-right: 10px;
     }
-   .rating-textContent{
+     .rating-textContent{
       width: 12rem !important;
-    }
-
-    .rating-gold{
-      width: 7rem;
-      top: 55%;
     }
     
 }
