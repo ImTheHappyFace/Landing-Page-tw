@@ -1,0 +1,346 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .col-md-6{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* Header */
+.header-list{
+    text-align: center;
+}
+.header-list li{
+    list-style: none;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    float: left;
+    color: white;
+    margin-right: 1rem;   
+}
+
+
+
+.header-list li:hover{
+    background: rgba(255, 255, 255, 0.151);
+}
+
+/* Search Text */
+
+.formFeild{
+    padding: 1rem 0 ;
+    width: 100%;
+    background: #233659;
+    border: none;
+    color: white;
+}
+
+
+/* Main-Container */
+
+/* Star and Rating */
+.star-rating{
+    background-color:transparent;
+    position: relative;
+}
+
+.rating-textContent{
+    position: relative;
+    height: 4vh;
+    width: 15vw;
+    top: 50%;
+    left: 63%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 0px 4px 24px
+    rgba(86,91,115,0.15);
+    border-radius: 4px;
+    padding: 2.5vh;
+}
+
+.textContent{
+    position: absolute;
+    /* height: 3vh;
+    width: 12vw; */
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+    background-color:
+    transparent;
+    color:
+    rgba(0, 0, 0, 0.548);
+    font-size: 1.7vh;
+}
+
+.rating-gold{
+    position: absolute;
+    height: 29px;
+    width: 16vh;
+    top: 50%;
+    left: 74.8%;
+    transform: translate(-50%,-50%);
+    background-color:transparent;
+}
+
+
+/* fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+***** Style Star Rating Widget **** */
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 12px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+/* Box Hover */
+
+.box{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(16, 16, 17);
+    width:50px;
+    transition: all 0.1s;
+    overflow:hidden;
+    border-radius: 5px;
+  }
+  
+  .box:hover{
+    width:85%;
+    border-radius: 5px;
+  }
+  
+  .box:hover .expand{
+    left:0;
+    cursor:pointer;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .box:hover .icon{
+      font-size: 27px;
+  }
+  
+  
+  
+  .expand{
+    flex:1;
+    position:relative;
+    left:45px;
+    padding:9px 9px;
+    display:hidden;
+    color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .icon{
+    right:16px;
+    position:absolute;
+    text-align: center;
+    background-color:rgba(5, 5, 5, 0.692);
+    padding: 10px 0;
+    text-align:center;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Main-text */
+
+  .main-text p{
+      margin-bottom: 2rem;
+      font-size: 18px;
+      letter-spacing: 1px;
+  }
+
+  .article-list{
+    list-style-position: outside;
+    padding: 2rem 2rem 2rem 0;
+    padding-left: 3.5rem;
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px
+    rgba(148,151,155,0.2);
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .article-list li:not(:last-child){
+    margin-bottom: 1rem;
+  }
+
+  /* button  */
+
+  /* Footer-list */
+
+  .footer-list {
+    list-style: none;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .footer-list li:not(:last-child){
+      margin-right: 10rem;
+  }
+
+  .footer-list li{
+    white-space: nowrap;
+  }
+
+  #container {
+    width:100%;
+    text-align:center;
+    }
+
+  #left {
+    float:left;
+    width:auto;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    width:auto;
+}
+
+#right {
+    float:right;
+    width:auto;
+}
+
+
+
+
+/* Hoverarble items */
+
+
+
+.twillio-msg:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+
+
+
+/* ICons */
+
+.fa-clipboard ,
+.fa-github{
+    color: black;
+    font-size: 22px;
+    padding-left: 1rem;
+    padding-top: 5px;
+}
+
+.import{
+    color: #92BFBF;
+}
+
+.color-red{
+    color:#EA7956;
+}
+.fade-text{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+
+/* Media Querries  */
+
+
+
+
+@media screen and (max-width:575px){
+    .main-row-top{
+        height: 128px !important;
+    }
+
+
+
+    .main-row-rich-text{
+        padding: 0rem 1.5rem !important;
+    
+    }
+
+    .row-rating-str{
+      display: none !important;
+    }
+
+    body{
+      line-height: 1.3 !important;
+    }
+
+    #right{
+      width: 177px;
+      padding-right: 10px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+   .expand{
+       display: none;
+   } 
+   .rating-textContent{
+    width: 16rem;
+   }
+   .textContent{
+    top: 47%;
+    left: 24%;
+   }
+
+   .star-rating-main{
+       display: none;
+   }
+
+   .secondary-text-area{
+       display: none;
+   }
+}
+
+

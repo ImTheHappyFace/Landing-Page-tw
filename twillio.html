@@ -1,0 +1,282 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="twillio.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row main-row-top" style="height: 57px;background: #233659;">
+
+            <div class="col-md-6 col-sm-8 col-xs-7">
+                <div class="row">
+                    <ul class="header-list" style="cursor: pointer;letter-spacing: 1px;">
+                        <li>SMS</li>
+                        <li>Voice</li>
+                        <li>Input</li>
+                        <li>PDF</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-4 col-xs-6">
+                <input type="text" class="formFeild" placeholder="Search....">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12 col-xs-12  main-text-area">
+                <div class="row row-rating-str" style="padding: 0.5rem;display: flex;justify-content: flex-end;">
+                    <div class="col-md-4 col-sm-8 col-xs-8  star-rating star-rating-main" style="margin: 0;padding: 0;">
+                        <div class="rating-textContent">
+                            <div class="textContent">
+                                Rate this page:
+                            </div>
+                            <div class="rating-gold">
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full"
+                                        for="star5" title="Awesome-5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                        class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full"
+                                        for="star4" title="Pretty good-4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                        class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full"
+                                        for="star3" title="Meh-3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                        class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full"
+                                        for="star2" title="Kinda bad-2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                        class="half" for="star1half" title="Meh-1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full"
+                                        for="star1" title="Sucks big time-1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                                        for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-4 expand-box"
+                        style="margin: 0;padding-top:1rem;padding-bottom: 1rem;">
+                        <div style="display:flex;justify-content:flex-end">
+                            <div class="box">
+                                <div class="expand">
+                                    Expand
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-expand main-expand" style="color:white;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row main-row-rich-text" style="padding: 0rem 6.5rem;line-height: 1.6;">
+                    <header style="padding: 1rem 0rem;">
+                        <h1 style="font-size: 3.2rem;line-height: 1.15;border-bottom: 1px solid rgba(148,151,155,0.2);
+                        padding-bottom: 1rem;">Programmable SMS Quickstart for Java </h1>
+                    </header>
+                    <section style="padding: 1rem 0;">
+                        <div class="main-text" style="margin-bottom: 0px;line-height: 1.6;">
+                            <p>Ready to start sending and receiving text messages with <a href="">Twilio Programmable
+                                    SMS</a> using Java?</p>
+                            <p> This Programmable SMS Quickstart for Java will teach you how to do this using the Twilio
+                                Java helper library for our <a href="">Communications REST API</a>.</p>
+                            <p>In this Quickstart, you will learn how to: </p>
+                        </div>
+                        <ol class="article-list" style="margin-bottom: 2rem;">
+                            <li>Sign up for Twilio and get your first SMS-enabled Twilio phone number</li>
+                            <li>Set up your development environment to send and receive messages</li>
+                            <li>Send your first SMS</li>
+                            <li>Receive inbound text messages</li>
+                            <li>Reply to incoming messages with an SMS</li>
+                        </ol>
+                        <p style="font-size: 18px;letter-spacing: 1px;margin-bottom: 2rem;">Prefer to get started by
+                            watching a video? Check out our <a href="">
+                                Java SMS Quickstart video on Youtube</a></p>
+
+                        <button type="button" class="btn btn-primary btn-block"
+                            style="padding: 20px 0px ;letter-spacing: 1px;">Show me how it's done
+                        </button>
+                    </section>
+                </div>
+
+                <div class="row" style="display: flex;justify-content: flex-end;padding-bottom: 2rem;">
+                    <div class="col-md-4 col-sm-6 col-xs-8  star-rating " style="margin: 0;padding: 0;">
+                        <div class="rating-textContent">
+                            <div class="textContent">
+                                Rate this page:
+
+                            </div>
+                            <div class="rating-gold">
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full"
+                                        for="star5" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                        class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full"
+                                        for="star4" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                        class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full"
+                                        for="star3" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                        class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full"
+                                        for="star2" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                        class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full"
+                                        for="star1" title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                                        for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                </div>
+                <div class="row" style="padding: 0rem 6.5rem 2rem 6.5rem;line-height: 1.6;">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-10">
+                        <div id="container" style="font-size: 12px;">
+                            <div id="left"><a href="">Terms of Service</a></div>
+                            <div id="right">Copyright © 2019 Twilio Inc.</div>
+                            <div id="center"><a href="">Privacy Policy</a></div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Container Code Area  -->
+
+            <div class="col-md-6 col-sm-12 xl-12 secondary-text-area" >
+
+                <div class="row" style="background-color: #152748;border-bottom: 1px solid rgba(255, 255, 255, 0.171);">
+                    
+                        <header style="padding: 1.6rem;width: 100%;">
+                            <span>ICON</span>
+                            <span class="twillio-msg" style="font-size: 25px;color: white;" >Send an SMS using Twilio with Java</span>
+                            <span>ICON-2</span>
+                        </header>
+                        
+
+                    
+                </div>
+                <!-- Header Top -->
+                <div class="row" style="background-color:#152748 ;">
+                    <div class="col-md-1 col-sm-1 col-xs-1" style="height: 3rem;padding-top: 0.7rem; padding-left: 1.2rem;font-size: 14px;cursor: pointer;">
+                        <span style="border-bottom: 2px solid #008CFF;padding: 3rem 0 1rem 0 ;color: white;width: auto;font-weight: 600;">JAVA</span>
+                    </div>
+                    <div class="col-md-9 col-sm-8 col-xs-3"></div>
+                    <div class="col-md-1 col-sm-1 col-xs-1" style="height: 3rem;padding-top: 0.7rem;color:white;font-size: 14px;">
+                        <span style="margin-right:1rem ;">7.X</span>
+                    </div>
+                    <div class="col-md-1 col-sm-1 col-xs-1 " style="height: 3rem;padding-top: 0.7rem;;font-size: 14px; cursor: pointer;">
+                            <span class="siqxX" style="color: rgba(255, 255, 255, 0.541);">6.X</span>
+                    </div>
+                </div>
+
+                <div class="row" style="background: #233659;">
+                   <div class="col-md-10 col-sm-9 col-xs-8"></div> 
+                   <div class="col-md-2 col-sm-3 col-xs-4">
+                       <span<a href="#" data-toggle="tooltip"  data-placement="bottom" title="Copy to Clipboard!"><i class="fa fa-clipboard"></i></a></span>
+                       <span><a href="#" data-toggle="tooltip"  data-placement="left" title="Open code sample in GitHub"><i class="fa fa-github"></i></a></span>
+                   </div>
+                </div>
+
+                <div class="row" style="background: #233659; padding-bottom: 20rem;">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row" style="padding: 1rem 4.5rem 0 4.5rem;">
+                                <ol style="color: white;">
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fade-text" style="letter-spacing: 2px;">// Install the Java helper library from twilio.com/docs/libraries/java</span></li>
+                                        <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">import</span> com.twilio.Twilio;</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">import</span> com.twilio.rest.api.v2010.account.Message;</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">import</span> com.twilio.type.PhoneNumber;</li>
+                                        <li></li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">public class</span> <span class="color-red">SmsSender</span> {</li>
+                                        <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fade-text">// Find your Account Sid and Auth Token at twilio.com/console</span></li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">public static final</span> String ACCOUNT_SID = </li>
+                                        <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";</li>
+                                        <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">public static final</span> String AUTH_TOKEN =</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "your_auth_token";</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="import">public static void</span> <span class="color-red">main</span>(String[] args) {</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Twilio class="span color-red">init</Twilio>(ACCOUNT_SID, AUTH_TOKEN);</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message message = Message</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="span color-red">creator</span>(new PhoneNumber("+14159352345"),</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new PhoneNumber("+14158141829"),</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Where's Wallace?")</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="span color-red">create</span>();</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(message.getSid());</li>
+                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+                                        <li>&nbsp;&nbsp;&nbsp;}</li>
+                                    </ol>
+                                    
+                                            <div class="col-sm-4 col-md-4 col-xs-6  offset-sm-9 offset-md-9 offset-xs-9" style="padding-top: 30px;">
+                                                    <button type="button" class="btn btn-primary btn-sm">Next Sample</button>
+                                            </div>
+                                   
+                                    
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
