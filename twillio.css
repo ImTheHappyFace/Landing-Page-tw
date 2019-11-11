@@ -319,6 +319,10 @@ h1 { font-size: 1.5em; margin: 10px; }
       width: 177px;
       padding-right: 10px;
     }
+     .rating-textContent{
+      width: 12rem !important;
+    }
+    
 }
 
 
