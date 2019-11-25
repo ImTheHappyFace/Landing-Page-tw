@@ -287,7 +287,32 @@ h1 { font-size: 1.5em; margin: 10px; }
 }
 .fade-text{
     color: rgba(255, 255, 255, 0.521);
+    
 }
+
+/* Text Area */
+
+textarea{
+  width: 100%;
+  height: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media Querries  */
